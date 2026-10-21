@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.sports_tennis_outlined),
-          selectedIcon: const Icon(Icons.sports_tennis, color: AppTheme.primaryColor),
-          label: 'Scores',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.emoji_events_outlined),
-          selectedIcon: const Icon(Icons.emoji_events, color: AppTheme.primaryColor),
-          label: 'Tournaments',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.leaderboard_outlined),
-          selectedIcon: const Icon(Icons.leaderboard, color: AppTheme.primaryColor),
-          label: 'Rankings',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.star_outline),
-          selectedIcon: const Icon(Icons.star, color: AppTheme.primaryColor),
-          label: 'Favorites',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.dashboard_outlined),
+            selectedIcon: const Icon(Icons.dashboard, color: AppTheme.primaryColor),
+            label: 'Court Live',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.list_alt_outlined),
+            selectedIcon: const Icon(Icons.list_alt, color: AppTheme.primaryColor),
+            label: 'Stats',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.analytics_outlined),
+            selectedIcon: const Icon(Icons.analytics, color: AppTheme.primaryColor),
+            label: 'Brackets',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.settings_outlined),
+            selectedIcon: const Icon(Icons.settings, color: AppTheme.primaryColor),
+            label: 'Rankings',
+          ),
         ],
       ),
     );
